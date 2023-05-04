@@ -43,7 +43,7 @@ $(WORK_ARCHIVE):
 	wget -P "$(dir $@)" "$(DL_URL)"
 
 cflags:
-	@echo CFLAGS=\"-L$(PWD)/$(DIST_LIB_DIR) -I$(PWD)/$(DIST_INC_DIR)\"
+	@echo -L$(PWD)/$(DIST_LIB_DIR) -I$(PWD)/$(DIST_INC_DIR)
 
 clean:
 	rm -rf $(BUILD_DIR)
